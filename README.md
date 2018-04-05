@@ -27,6 +27,6 @@ npm run remind
 
 # Env variables
 
-You must have a bot token environment variable to run this app.
+You must have a `BOT_TOKEN` environment variable to run this app.
 
 Get a token from your organisation's slack settings.
