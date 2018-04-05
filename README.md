@@ -15,15 +15,23 @@ How to update your slack profile: https://get.slack.help/hc/en-us/articles/20409
 
 # Usage
 
+### Stats
+
 Find stats about how many users will be affected:
 ```
 npm run stats
 ```
 
+### Send reminders
+
 Send message to users without profile descriptions
 ```
 npm run remind
 ```
+
+This command will warn how many messages you are about to send, and ask to continue.
+
+Messages will be sent at a 1 second interval in accordance with slack's API usage limits
 
 # Env variables
 
