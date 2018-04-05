@@ -1,0 +1,17 @@
+{
+  "name": "slack-profile-reminder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "remind": "node remind.js",
+    "stats": "node stats.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prompt-promise": "^1.0.3",
+    "slack": "^11.0.0"
+  }
+}
