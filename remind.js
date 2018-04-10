@@ -20,10 +20,14 @@ reminder.getUsers().then(function(users) {
 
   const fn = function(user) {
     return new Promise(function(resolve, reject) {
+      //1 second delay
       setTimeout(function() {
-        reminder.notifyUser(user);
         resolve();
-      }, 1000); //1 second delay
+      }, 1000);
+    }).then(function() {
+      reminder.notifyUser(user).catch(function() {
+        console.trace(`Something went wrong notifying a user`)
+      })
     })
   }
 
