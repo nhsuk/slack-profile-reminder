@@ -41,9 +41,14 @@ A good example:
 
 How to update your slack profile: https://get.slack.help/hc/en-us/articles/204092246-Edit-your-profile
     `
+  }).then(function(response) {
+    if(response.ok) {
+      console.log(`Message sent to user ${user.id}`)
+    } else {
+      console.warn(`Message sending to user ${user.id} failed`)
+      console.warn(response)
+    }
   })
-
-  console.log(`Message sent to user ${user.id}`)
 }
 
 module.exports = {
